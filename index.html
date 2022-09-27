@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe - MK</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpeg" href="/favicon.jpeg" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">Tic Tac Toe</div>
+    </header>
+    <div class="container">
+      <div class="stats">
+        <div class="gameInfoMain statsMain">Stats</div>
+        <div class="mobileStats">
+          <div class="statsText">X Won: <span id="xWon">0</span></div>
+          <div class="statsText">O Won: <span id="oWon">0</span></div>
+        </div>
+        <div>
+          <div class="statsText">
+            Total Valid Games: <span id="totalWon">0</span>
+          </div>
+          <div class="statsText">Draw Games: <span id="drawGame">0</span></div>
+          <button id="resetStats">Reset Stats</button>
+        </div>
+      </div>
+      <div class="gameContainer">
+        <div class="box bl bt"><span class="boxText"></span></div>
+        <div class="box bt"><span class="boxText"></span></div>
+        <div class="box br bt"><span class="boxText"></span></div>
+        <div class="box bl"><span class="boxText"></span></div>
+        <div class="box"><span class="boxText"></span></div>
+        <div class="box br"><span class="boxText"></span></div>
+        <div class="box bl bb"><span class="boxText"></span></div>
+        <div class="box bb"><span class="boxText"></span></div>
+        <div class="box br bb"><span class="boxText"></span></div>
+      </div>
+      <div class="gameInfo">
+        <div class="gameInfoMain">Tic Tac Toe Dashboard</div>
+        <div
+          class="gameInfoText"
+          style="font-size: 39px; color: rgb(7, 9, 39); font-family: Prompt"
+        >
+          Turn X
+        </div>
+        <div class="resetScreen">
+          <div class="gif">
+            <img src="Congrats.gif" alt="Congrats" />
+          </div>
+          <!-- <div class="rs" style="display: flex; flex-direction: column; position:absolute; top: 71px;
+            left: 153px;">
+              <div class="gameInfoText"></div>
+              <button id="reset">Reset</button>
+            </div> -->
+          <div class="rs" style="display: flex; flex-direction: column">
+            <div class="gameInfoText"></div>
+            <button id="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Created By &nbsp<a
+        href="https://www.linkedin.com/in/mkamra2000"
+        target="_blank"
+        style="color: rgb(227, 230, 233)"
+      >
+        Mayank Kamra</a
+      >
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
